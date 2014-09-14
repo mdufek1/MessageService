@@ -12,7 +12,7 @@ package messageservice;
 public class MessageManager {
 
     public MessageManager(MessageSource source, MessageDestination destination) {
-        destination.outputMessage(source.getMessage());
+        processMessage(source, destination);
     }
 
     public MessageManager() {
