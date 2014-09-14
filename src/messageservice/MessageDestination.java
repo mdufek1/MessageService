@@ -11,4 +11,6 @@ package messageservice;
  */
 public interface MessageDestination {
     
+    public abstract void outputMessage();
+    
 }

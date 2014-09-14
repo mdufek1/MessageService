@@ -9,6 +9,8 @@ package messageservice;
  *
  * @author Mike
  */
-public class FileInput {
-    
+public class MessageService {
+    public static void main(String[] args) {
+        
+    }
 }

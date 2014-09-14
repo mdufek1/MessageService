@@ -11,4 +11,6 @@ package messageservice;
  */
 public interface MessageSource {
     
+    public abstract String getMessage();
+    
 }
