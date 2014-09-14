@@ -10,5 +10,9 @@ package messageservice;
  * @author Mike
  */
 public class MessageManager {
+
+    public void processMessage(MessageSource source, MessageDestination destination){
+        destination.outputMessage(source.getMessage());
+    }
     
 }

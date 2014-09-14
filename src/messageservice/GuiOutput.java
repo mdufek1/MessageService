@@ -5,10 +5,17 @@
  */
 package messageservice;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Mike
  */
-public class GuiOutput {
+public class GuiOutput implements MessageDestination{
+
+    @Override
+    public void outputMessage(String messageText) {
+      JOptionPane.showMessageDialog(null, messageText);
+    }
     
 }

@@ -11,6 +11,9 @@ package messageservice;
  */
 public class MessageService {
     public static void main(String[] args) {
-        
+        MessageSource source = new KeyboardInput();
+        MessageDestination destination = new GuiOutput();
+        MessageManager messageManager = new MessageManager();
+        messageManager.processMessage(source, destination);
     }
 }

@@ -9,6 +9,12 @@ package messageservice;
  *
  * @author Mike
  */
-public class ConsoleOutput {
+public class ConsoleOutput implements MessageDestination {
+
+    @Override
+    public void outputMessage(String messageText) {
+        System.out.println(messageText);
+    }
+    
     
 }
